@@ -93,4 +93,122 @@ func descontoLoja(valorTotal: Double, cartaoFidelidade: Bool) -> Bool {
 }
 
 var vouTerDesconto: Bool = descontoLoja(valorTotal: 5000, cartaoFidelidade: false)
-print(vouTerDesconto)
+//print(vouTerDesconto)
+
+
+// Desafios feitos na aula
+
+// Desafio 1
+
+func resultado (nota1: Double, nota2: Double) -> String {
+    var mediaNotas: Double = (nota1 + nota2) / 2
+    
+    if (mediaNotas >= 7) {
+        return "Aluno Aprovado"
+    } else {
+        return "Aluno Reprovado"
+    }
+}
+
+var resultadoProva = resultado(nota1: 7.5, nota2: 3.1)
+//print(resultadoProva)
+
+// Desafio 3
+
+func semaforo(sinalizacao: String) -> String {
+    if (sinalizacao == "vermelho") {
+        return "PARE"
+    }
+    else if (sinalizacao == "amarelo") {
+        return "ATENÇÃO"
+    }
+    else if (sinalizacao == "verde") {
+        return "SIGA EM FRENTE"
+    } else {
+        return "PARAMETRO INVÁLIDO"
+    }
+}
+
+var resultadoSemaforo: String = semaforo(sinalizacao: "vermelho")
+//print(resultadoSemaforo)
+
+// Desafio 4
+
+func programacaoFinalDeSemanda (eFimDeSemana: Bool, tenhoDinheiro: Bool) {
+    if (eFimDeSemana == true && tenhoDinheiro == true) {
+        print("VAMOS PASSEAR!")
+    } else {
+        print("VAMOS FICAR EM CASA")
+    }
+}
+
+//programacaoFinalDeSemanda(eFimDeSemana: true, tenhoDinheiro: true)
+
+
+// Desafio 2
+
+func desconto (total: Double) -> Double {
+    if (total < 100.00) {
+        return total * 0.9
+    }
+    else if (total <= 200.00) {
+        return total * 0.85
+    } else {
+        return total * 0.8
+    }
+    
+}
+
+var valorDesconto: Double = desconto(total: 10000)
+//print(valorDesconto)
+
+// Desafio 5
+
+func verificacaoParOuImpar (numero: Int) -> Bool {
+    if (numero % 2 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+var parOuImpar: Bool = verificacaoParOuImpar(numero: 7)
+//print(parOuImpar)
+
+// Desafio 6
+
+func verificaMaiorNumero (num1: Double, num2: Double) -> String {
+    if(num1 > num2) {
+        return "BOLA"
+    } else {
+        return "BANANA"
+    }
+}
+
+var numero: String = verificaMaiorNumero(num1: 7.0, num2: 7.1)
+//print(numero)
+
+
+// DESAFIO 7
+
+func conviteFesta (foiConvidado: Bool) {
+    if (foiConvidado == true) {
+        print("Liberado pra festa")
+    } else {
+        print("Infelizmente você não foi convidado")
+    }
+}
+
+//conviteFesta(foiConvidado: true)
+
+
+
+
+
+
+
+
+
+
+
+
