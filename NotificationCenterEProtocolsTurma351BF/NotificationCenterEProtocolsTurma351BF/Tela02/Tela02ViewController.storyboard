@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela02 View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Tela02ViewController" id="Y6W-OH-hqX" customClass="Tela02ViewController" customModule="NotificationCenterEProtocolsTurma351BF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI8-Lz-KyI">
+                                <rect key="frame" x="100" y="159" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itX-w8-Imj">
+                                <rect key="frame" x="50" y="280" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="macbookProAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="itM-8f-Rig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRE-iO-jUx">
+                                <rect key="frame" x="50" y="415" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="imacAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eHX-RL-nHq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GI8-Lz-KyI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="1QV-Wv-SAd"/>
+                            <constraint firstItem="wRE-iO-jUx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="6vb-zD-9YJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GI8-Lz-KyI" secondAttribute="trailing" constant="100" id="VXZ-5P-vMo"/>
+                            <constraint firstItem="itX-w8-Imj" firstAttribute="top" secondItem="GI8-Lz-KyI" secondAttribute="bottom" constant="100" id="eHb-fT-INK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wRE-iO-jUx" secondAttribute="trailing" constant="50" id="f7y-tL-1Dx"/>
+                            <constraint firstItem="wRE-iO-jUx" firstAttribute="top" secondItem="itX-w8-Imj" secondAttribute="bottom" constant="100" id="jO2-yb-47k"/>
+                            <constraint firstItem="itX-w8-Imj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="kcb-X2-YSM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="itX-w8-Imj" secondAttribute="trailing" constant="50" id="kfH-1l-hKa"/>
+                            <constraint firstItem="GI8-Lz-KyI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="mlg-eQ-6HE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imacButton" destination="wRE-iO-jUx" id="AoY-sN-AZA"/>
+                        <outlet property="macbookProButton" destination="itX-w8-Imj" id="TUf-OA-Yar"/>
+                        <outlet property="textLabel" destination="GI8-Lz-KyI" id="pWk-KA-vL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
